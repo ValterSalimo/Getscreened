@@ -17,7 +17,7 @@ getscreened/
 │   ├── sentiment_cli.py       # Command-line interface
 │   ├── sentiment_analysis.ipynb # Jupyter notebook
 │   ├── imdb_sentiment_model/  # Fine-tuned DistilBERT model
-│   └── content/               # IMDB dataset
+│   └── content/└  ── content/                  # IMDB dataset
 ├── Task 2/                    # Knowledge Extraction Q&A System
 │   ├── app.py                 # Streamlit web application
 │   └── requirements.txt       # Dependencies
@@ -185,18 +185,5 @@ python sentiment_cli.py
 # Generate technical interview questions
 python task3_complete.py
 # Generates: System design questions, AI ethics scenarios, algorithm challenges
-```
 
-## 📈 Future Enhancements
 
-- Integration of additional language models (Claude, GPT)
-- Multi-language support for sentiment analysis
-- Advanced document preprocessing with OCR
-- Real-time collaborative Q&A sessions
-- Interview question difficulty adaptation based on candidate responses
-
----
-
-**Created with:** Python, Transformers, Streamlit, Google Gemini, and modern ML/AI practices
-**Author:** Portfolio demonstration project
-**Date:** May 2025
