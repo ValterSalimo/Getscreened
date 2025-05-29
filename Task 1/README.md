@@ -92,50 +92,14 @@ python app.py --file "reviews.txt" --output "results.csv"
 python app.py --text "A review" --model_path "./my_custom_model" --no-color
 ```
 
-## Jupyter Notebook Usage
-
-For interactive usage in a Jupyter notebook:
-
-```python
-# Import the widget function
-from jupyter_widget import create_sentiment_widget
-
-# Create and display the interactive widget
-create_sentiment_widget()
-```
 
 A sample notebook (`local_csv_sentiment_analysis.ipynb`) is included that demonstrates the entire workflow from model training to interactive usage.
 
-## Features
 
-- **Text preprocessing** to clean and normalize input text
-- **Fast prediction** using cached model loading
-- **Interactive command line interface**
-- **Batch processing** of multiple reviews from file
-- **CSV export** for batch processing results
-- **Interactive Jupyter notebook widget**
-- **Color-coded output** for better readability
-  - Green for positive sentiment
-  - Red for negative sentiment
-  - Emoji indicators (😄 for positive, 😞 for negative)
-- **GPU acceleration** when available
-- **Detailed metrics**
-  - Sentiment classification (Positive/Negative)
-  - Confidence score (percentage)
-  - Processing time measurements
 
 ## Model Information
 
 The sentiment analysis model is a fine-tuned version of DistilBERT, trained on the IMDB Movie Reviews dataset with 50,000 reviews. The model has been optimized for sentiment classification of movie reviews and achieves high accuracy.
-
-## File Structure
-
-- `sentiment_cli.py` - Modern CLI tool with color-coded output (run without arguments for interactive mode)
-- `app.py` - Legacy CLI with CSV export support
-- `local_csv_sentiment_analysis.ipynb` - Complete notebook with model training and interactive usage
-- `requirements.txt` - All required dependencies
-- `example_reviews.txt` - Sample reviews for batch testing
-- `imdb_sentiment_mode/imdb_sentiment_model/` - Pre-trained model files
 
 ## Usage Examples
 
